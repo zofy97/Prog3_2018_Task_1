@@ -49,24 +49,31 @@ public class PersonMain {
                             switch(day) {
                                 case 1: day = 1;    {
                                     s.setFreeWorkday(Workdays.MONDAY);
+                                    break;
                                 }
                                 case 2: day = 2;    {
                                     s.setFreeWorkday(Workdays.TUESDAY);
+                                    break;
                                 }
                                 case 3: day = 3;    {
                                     s.setFreeWorkday(Workdays.WEDNESDAY);
+                                    break;
                                 }
                                 case 4: day = 4;    {
                                     s.setFreeWorkday(Workdays.THURSDAY);
+                                    break;
                                 }
                                 case 5: day = 5;    {
                                     s.setFreeWorkday(Workdays.FRIDAY);
+                                    break;
                                 }
                                 case 6: day = 6;    {
                                     s.setFreeWorkday(Workdays.SATURDAY);
+                                    break;
                                 }
                                 case 7: day = 7;    {
                                     s.setFreeWorkday(Workdays.SUNDAY);
+                                    break;
                                 }
                             }
                             scanner.reset();
@@ -92,24 +99,31 @@ public class PersonMain {
                             switch(day) {
                                 case 1: day = 1;    {
                                     e.setFreeWorkday(Workdays.MONDAY);
+                                    break;
                                 }
                                 case 2: day = 2;    {
                                     e.setFreeWorkday(Workdays.TUESDAY);
+                                    break;
                                 }
                                 case 3: day = 3;    {
                                     e.setFreeWorkday(Workdays.WEDNESDAY);
+                                    break;
                                 }
                                 case 4: day = 4;    {
                                     e.setFreeWorkday(Workdays.THURSDAY);
+                                    break;
                                 }
                                 case 5: day = 5;    {
                                     e.setFreeWorkday(Workdays.FRIDAY);
+                                    break;
                                 }
                                 case 6: day = 6;    {
                                     e.setFreeWorkday(Workdays.SATURDAY);
+                                    break;
                                 }
                                 case 7: day = 7;    {
                                     e.setFreeWorkday(Workdays.SUNDAY);
+                                    break;
                                 }
                             }
                             System.out.println("Enter Workplace: ");
@@ -134,24 +148,31 @@ public class PersonMain {
                             switch(day) {
                                 case 1: day = 1;    {
                                     sw.setFreeWorkday(Workdays.MONDAY);
+                                    break;
                                 }
                                 case 2: day = 2;    {
                                     sw.setFreeWorkday(Workdays.TUESDAY);
+                                    break;
                                 }
                                 case 3: day = 3;    {
                                     sw.setFreeWorkday(Workdays.WEDNESDAY);
+                                    break;
                                 }
                                 case 4: day = 4;    {
                                     sw.setFreeWorkday(Workdays.THURSDAY);
+                                    break;
                                 }
                                 case 5: day = 5;    {
                                     sw.setFreeWorkday(Workdays.FRIDAY);
+                                    break;
                                 }
                                 case 6: day = 6;    {
                                     sw.setFreeWorkday(Workdays.SATURDAY);
+                                    break;
                                 }
                                 case 7: day = 7;    {
                                     sw.setFreeWorkday(Workdays.SUNDAY);
+                                    break;
                                 }
                             }
                             System.out.println("Enter University: ");
@@ -172,17 +193,42 @@ public class PersonMain {
                             System.out.println("Invalid Entry");
                         }
                     }
-
+                    break;
                 }
                 case 2: choice = 2; {
                     for(int i = 0; i < person.length; i++)  {
-                        System.out.println(person[i]);
+                        if(person[i] != null) {
+                            System.out.println(person[i]);
+                        }
                     }
+                    break;
                 }
                 case 3: choice = 3; {
-                    for(int i = 0; i < person.length; i++)  {
-
+                    for(int i = 0; i < person.length; i++) {
+                        if(person[i] != null) {
+                            Student s = new Student();
+                            if(person[i].getClass() == s.getClass()) {
+                                System.out.println(person[i]);
+                            }
+                        }
                     }
+                    for(int i = 0; i < person.length; i++)  {
+                        if(person[i] != null) {
+                            Employee e = new Employee();
+                            if(person[i].getClass() == e.getClass()) {
+                                System.out.println(person[i]);
+                            }
+                        }
+                    }
+                    for(int i = 0; i < person.length; i++)  {
+                        if(person[i] != null) {
+                            StudentWorker sw = new StudentWorker();
+                            if(person[i].getClass() == sw.getClass()) {
+                                System.out.println(person[i]);
+                            }
+                        }
+                    }
+                    break;
                 }
             }
         }

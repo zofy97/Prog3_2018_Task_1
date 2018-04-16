@@ -32,16 +32,17 @@ public class StudentWorker extends Student {
     }
 
 
+    @Override
     public String toString() {
         return "StudentWorker{" +
-                "workplace='" + workplace + '\'' +
-                ", salary=" + salary +
-                ", firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", age=" + age +
-                ", freeWorkday=" + freeWorkday +
-                ", university='" + university + '\'' +
-                ", course='" + course + '\'' +
+                "Firstname: '" + firstname + '\'' +
+                ", Lastname: '" + lastname + '\'' +
+                ", Age: " + age +
+                ", free Workday: " + freeWorkday +
+                ", University: '" + university + '\'' +
+                ", Course: '" + course + '\'' +
+                ", Workplace: '" + workplace + '\'' +
+                ", Salary: " + salary +
                 '}';
     }
 }

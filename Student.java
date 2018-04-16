@@ -51,7 +51,7 @@ public class Student implements Person {
     }
 
     public void setLastname(String lastname) {
-        this.lastname = firstname;
+        this.lastname = lastname;
     }
 
     public void setAge(int age) {
@@ -73,12 +73,12 @@ public class Student implements Person {
     @Override
     public String toString() {
         return "Student{" +
-                "firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", age=" + age +
-                ", university='" + university + '\'' +
-                ", course='" + course + '\'' +
-                ", freeWorkday=" + freeWorkday +
+                "Firstname: '" + firstname + '\'' +
+                ", Lastname: '" + lastname + '\'' +
+                ", Age: " + age +
+                ", University: '" + university + '\'' +
+                ", Course: '" + course + '\'' +
+                ", free Workday: " + freeWorkday +
                 '}';
     }
 }
