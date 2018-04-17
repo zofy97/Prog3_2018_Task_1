@@ -1,4 +1,10 @@
-package Task_1;
+/**
+ * @Sophie Schauer s0559289
+ */
+/*
+Student has 6 attributes
+4 of them are inherited from Person
+ */
 
 public class Student implements Person {
 
@@ -19,7 +25,7 @@ public class Student implements Person {
     }
 
     Student()   {
-
+    //constructor without parameters
     }
 
     public String getFirstname() {

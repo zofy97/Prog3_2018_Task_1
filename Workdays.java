@@ -1,5 +1,3 @@
-package Task_1;
-
 public enum Workdays {
 
     MONDAY("Monday"), TUESDAY("Tuesday"), WEDNESDAY("Wednesday"),

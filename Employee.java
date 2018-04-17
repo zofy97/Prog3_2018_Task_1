@@ -1,7 +1,10 @@
-package Task_1;
-
-import com.sun.corba.se.spi.orbutil.threadpool.Work;
-
+/**
+ * @Sophie Schauer s0559289
+ */
+/*
+Employee has 6 Attributes
+4 of them are inherited from Person
+ */
 public class Employee implements Person {
 
     String firstname;
@@ -11,7 +14,7 @@ public class Employee implements Person {
     String workplace;
     int salary;
 
-    Employee (String first, String last, int age, Workdays free, String place, int salary)  {
+    Employee(String first, String last, int age, Workdays free, String place, int salary)  {
         firstname = first;
         lastname = last;
         this.age = age;
@@ -21,7 +24,7 @@ public class Employee implements Person {
     }
 
     Employee () {
-
+    //constructor without parameters
     }
 
     public String getFirstname() {
@@ -74,12 +77,12 @@ public class Employee implements Person {
 
     public String toString() {
         return "Employee{" +
-                "firstname='" + firstname + '\'' +
-                ", lastname='" + lastname + '\'' +
-                ", age=" + age +
-                ", freeWorkday=" + freeWorkday +
-                ", workplace='" + workplace + '\'' +
-                ", salary=" + salary +
+                "Firstname: '" + firstname + '\'' +
+                ", Lastname: '" + lastname + '\'' +
+                ", Age: " + age +
+                ", Workplace: '" + workplace + '\'' +
+                ", Salary: " + salary +
+                ", free Workday: " + freeWorkday +
                 '}';
     }
 }

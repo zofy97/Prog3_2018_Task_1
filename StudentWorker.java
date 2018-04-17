@@ -1,5 +1,10 @@
-package Task_1;
-
+/**
+ * @Sophie Schauer s0559289
+ */
+/*
+Studentworker has 8 attributes
+it extends Student and inherited 6 attributes
+ */
 public class StudentWorker extends Student {
 
     String workplace;
@@ -12,7 +17,7 @@ public class StudentWorker extends Student {
     }
 
     StudentWorker  ()   {
-
+    //constructor without parameters
     }
 
     public String getWorkplace() {
@@ -38,11 +43,11 @@ public class StudentWorker extends Student {
                 "Firstname: '" + firstname + '\'' +
                 ", Lastname: '" + lastname + '\'' +
                 ", Age: " + age +
-                ", free Workday: " + freeWorkday +
                 ", University: '" + university + '\'' +
                 ", Course: '" + course + '\'' +
                 ", Workplace: '" + workplace + '\'' +
                 ", Salary: " + salary +
+                ", free Workday: " + freeWorkday +
                 '}';
     }
 }

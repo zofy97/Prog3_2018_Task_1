@@ -1,4 +1,12 @@
-package Task_1;
+/**
+ * @Sophie Schauer s0559289
+ */
+/*
+user can choose between 4 option
+you can create a new person,
+print all existing people (& sorted by type)
+and you can search for names.
+ */
 
 import java.util.Scanner;
 
@@ -28,9 +36,11 @@ public class PersonMain {
                 {
                     if (count < 50) {
                         Scanner scanner = new Scanner(System.in);
+                        // you have to choose what kind of person you want to create
                         System.out.print("Student? Employee? Studentworker? ");
                         String type = scanner.next();
 
+                        // enter all details about the person
                         if (type.equals("Student")) {
                             Student s = new Student();
                             System.out.println("Enter Firstname: ");
@@ -195,6 +205,7 @@ public class PersonMain {
                     }
                     break;
                 }
+                // all people are printed
                 case 2: choice = 2; {
                     for(int i = 0; i < person.length; i++)  {
                         if(person[i] != null) {
@@ -203,6 +214,7 @@ public class PersonMain {
                     }
                     break;
                 }
+                // all people are printed and sorted by their type (Student then Employee then Studentworker)
                 case 3: choice = 3; {
                     for(int i = 0; i < person.length; i++) {
                         if(person[i] != null) {
@@ -229,6 +241,37 @@ public class PersonMain {
                         }
                     }
                     break;
+                }
+                // you have to choose whether to search for the first name or last name
+                case 4: choice = 4; {
+                    System.out.println("What are you searching for?");
+                    System.out.println("Firstname? Lastname? ");
+                    String search = scan.next();
+                    if (search.equals("Firstname")) {
+                        // enter the beginning, a syllable or a letter from the name
+                        System.out.println("Enter: ");
+                        String name = scan.next();
+                        for(int i = 0; i < person.length; i++)  {
+                            if(person[i] != null) {
+                                if (person[i].getFirstname().contains(name)) {
+                                    System.out.println(person[i]);
+                                }
+                            }
+                        }
+                    } else if (search.equals("Lastname"))   {
+                        // enter the beginning, a syllable or a letter from the name
+                        System.out.println("Enter: ");
+                        String last = scan.next();
+                        for (int i = 0; i < person.length; i++) {
+                            if(person[i] != null) {
+                                if (person[i].getLastname().contains(last)) {
+                                    System.out.println(person[i]);
+                                }
+                            }
+                        }
+                    } else {
+                        System.out.println("Invalid entry");
+                    }
                 }
             }
         }
