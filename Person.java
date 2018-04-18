@@ -4,6 +4,7 @@
 /*
 interface which is implemented in Student and Employee
  */
+
 public interface Person {
 
     String getFirstname();

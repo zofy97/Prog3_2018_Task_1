@@ -201,6 +201,7 @@ public class PersonMain {
                             count++;
                         } else {
                             System.out.println("Invalid Entry");
+                            break;
                         }
                     }
                     break;
@@ -271,6 +272,7 @@ public class PersonMain {
                         }
                     } else {
                         System.out.println("Invalid entry");
+                        break;
                     }
                 }
             }

@@ -5,6 +5,7 @@
 Studentworker has 8 attributes
 it extends Student and inherited 6 attributes
  */
+
 public class StudentWorker extends Student {
 
     String workplace;

@@ -5,6 +5,7 @@
 Employee has 6 Attributes
 4 of them are inherited from Person
  */
+
 public class Employee implements Person {
 
     String firstname;
